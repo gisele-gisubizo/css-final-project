@@ -1,0 +1,77 @@
+
+.container {
+    display: flex;         /* Enable Flexbox */
+    width: 100%;           /* Full width of the container */
+    height: 100vh;         /* Full height of the viewport */
+    padding: 10px;  
+background: rgb(0, 0, 0); 
+color: white;    /* Add some padding around the container */
+    
+  
+
+}
+
+
+/* Left box - smaller */
+.left-box {
+  color: white;/* Red color */
+    flex: 1;                    /* Takes up equal space */
+    margin-right: 10px;         /* Space between left and middle box */
+}
+
+
+.left-box ul li{
+    list-style-type: none ;
+    padding: 10px;
+    font-size: 14px;
+}
+.left-box a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+}
+
+.tweet{
+    box-sizing: border-box;
+
+    padding: 10px;
+
+    border-radius: 15px;
+    margin-left: 40px;
+    background-color: #51a7f1;
+    text-align: center; 
+}
+
+/* Middle box - larger */
+.middle-box {
+    background-color: #4CAF50; /* Green color */
+    flex: 2;                    /* Takes up twice the space as the other divs */
+    margin-right: 10px;         /* Space between middle and right box */
+}
+
+/* Right box - smaller */
+.right-box {
+    background-color: #1E88E5; /* Blue color */
+    flex: 1;                    /* Takes up equal space */
+}
+
+
+.content-A a{
+    display: inline;
+    padding: 90px;
+    transition: 0.3s;
+    text-decoration: none;
+  color: white;
+    position: relative;
+}
+
+.content-A :hover::after {
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    left: 50px;
+    margin-left: 35px;
+    width: 30%;
+    height: 2px;
+    background-color:#51a7f1 ;
+  }
