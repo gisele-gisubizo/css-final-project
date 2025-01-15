@@ -1,8 +1,13 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .container {
     display: flex;         /* Enable Flexbox */
     width: 100%;           /* Full width of the container */
-    height: 100vh;         /* Full height of the viewport */
+    height: 180vh;         /* Full height of the viewport */
     padding: 10px;  
 background: rgb(0, 0, 0); 
 color: white;    /* Add some padding around the container */
@@ -16,7 +21,8 @@ color: white;    /* Add some padding around the container */
 .left-box {
   color: white;/* Red color */
     flex: 1;                    /* Takes up equal space */
-    margin-right: 10px;         /* Space between left and middle box */
+    margin-right: 10px; 
+    margin-left: 50px;        /* Space between left and middle box */
 }
 
 
@@ -31,28 +37,159 @@ color: white;    /* Add some padding around the container */
     
 }
 
-.tweet{
-    box-sizing: border-box;
-
-    padding: 10px;
-
-    border-radius: 15px;
-    margin-left: 40px;
-    background-color: #51a7f1;
-    text-align: center; 
+.tweet-box{
+    background-color: #1DA1F2; /* Twitter blue color */
+    padding: 10px; 
+    max-width: 150px;
+    border-radius: 25px; 
+    margin-top: 10px;
+    text-align: center;
+  }
+.tweet-link{
+    color: white; 
+    text-decoration: none; 
 }
+
+
+
 
 /* Middle box - larger */
 .middle-box {
-    background-color: #4CAF50; /* Green color */
+    background-color: #000000; /* Green color */
     flex: 2;                    /* Takes up twice the space as the other divs */
-    margin-right: 10px;         /* Space between middle and right box */
+    margin-right: 10px; 
+          /* Space between middle and right box */
+}
+
+
+.other-icons a img{
+    width: 14px;
+    margin-top: 35px;
+    
+    margin-left: 25px;
+  
+ }
+ 
+ .other-icons a {
+   text-decoration: none;
+ 
+ }
+.tweet-2 a{
+
+margin-left: 30em;
+
+background-color: #1DA1F2; /* Twitter blue color */
+    padding: 10px; 
+    max-width: 50px;
+    border-radius: 25px; 
+    margin-top: 10px;
+    text-align: center;
+    
+}
+
+.tweet-link-2 {
+    color: white; 
+    text-decoration: none; 
+}
+.content p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #aba7a7;
+}
+
+.content h1{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.link-box{
+    background-color: #ffffff; /* Twitter blue color */
+    padding: 5px; 
+    max-width: 50px;
+    border-radius: 25px; 
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+.link{
+    color: rgb(0, 0, 0); 
+    text-decoration: none; 
+}
+
+.real-content img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: flex;
+   
+}
+
+.real-content p{
+margin-left: 60px;
+position: absolute;
+top: 389px;
+
+}
+
+.other-content{
+    padding: 20PX;
+}
+.other-content ul li{
+    margin-left: 10px;
+    list-style-type:none;
 }
 
 /* Right box - smaller */
 .right-box {
-    background-color: #1E88E5; /* Blue color */
+    /* Blue color */
     flex: 1;                    /* Takes up equal space */
+}
+ .final-middle img{
+    width: 650px;
+ }
+
+ .search-container{
+    position: relative; 
+    padding: 10px;
+   
+ 
+ }
+
+ .search-container i {
+    position: absolute;
+    left: 10px; /* Adjust as needed for icon positioning */
+    top: 50%;
+    transform: translateY(-50%); /* Center icon vertically */
+    color: #999; /* Optional: Set icon color */
+  }
+
+  .search-container input {
+    padding-left: 30px; /* Adjust padding to match icon size and position */
+    border-radius: 25px;
+    background-color:  rgba(87, 87, 87, 0.5);
+    height: 30px;
+    color: #ffffff;
+    border:1px solid rgb(43, 42, 42);
+
+  }
+
+  .some-content{
+    background-color: rgba(87, 87, 87, 0.5); /* Semi-transparent white */
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Allows height to adjust based on content */
+    margin-left: 5px;
+    margin-top: 20px;
+    
+    text-align: left;
+  }
+  
+
+.one{
+    margin-top: 15px;
 }
 
 
